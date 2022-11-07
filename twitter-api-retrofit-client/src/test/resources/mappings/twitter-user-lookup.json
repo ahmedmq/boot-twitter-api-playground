@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/2/users/by/username/twitter_demo",
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer AAAAAAAAAAAAAAAAAAAAAEgkiwEAAAAAam%2Bb49N5bkbiQIx6Nzr6tvOR5kk%3DRQngUp3Lu11HZttp1TkGbBuvTa4F66HuqgkZgfYTmGi299gxDY"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": ["response-template"],
+    "jsonBody": {
+      "data":{
+        "id":"342345708",
+        "name":"Twitter Demo",
+        "username":"twitter_demo"
+      }
+    }
+  }
+}

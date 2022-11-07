@@ -3,7 +3,6 @@ package com.ahmedmq.twitter.api.retrofit.client.provider.twitter;
 import java.io.IOException;
 
 import com.ahmedmq.twitter.api.common.model.auth.AuthToken;
-import com.ahmedmq.twitter.api.retrofit.client.provider.twitter.TwitterApiClient;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import okhttp3.Credentials;

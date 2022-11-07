@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/2/users/342345708/liked_tweets?max_results=5",
+    "queryParameters": {
+      "max_results": {
+        "equalTo": "5"
+      }
+    },
+    "headers": {
+      "Authorization": {
+        "equalTo": "Bearer AAAAAAAAAAAAAAAAAAAAAEgkiwEAAAAAam%2Bb49N5bkbiQIx6Nzr6tvOR5kk%3DRQngUp3Lu11HZttp1TkGbBuvTa4F66HuqgkZgfYTmGi299gxDY"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": ["response-template"],
+    "jsonBody": {
+      "data": [
+        {
+          "edit_history_tweet_ids": [
+            "1583562049761644544"
+          ],
+          "id": "1583562049761644544",
+          "text": "How to make the best paper airplane  https://t.co/1w4Bj7RLH3"
+        },
+        {
+          "edit_history_tweet_ids": [
+            "1581902874811854848"
+          ],
+          "id": "1581902874811854848",
+          "text": "Why is this so true https://t.co/4LoVSfOpdr https://t.co/AXNx1IunkR"
+        },
+        {
+          "edit_history_tweet_ids": [
+            "1581654488598736896"
+          ],
+          "id": "1581654488598736896",
+          "text": "@elonmusk “Two things are infinite: The universe and human stupidity.” \n— Albert Einstein (true source unknown)"
+        },
+        {
+          "edit_history_tweet_ids": [
+            "1580176271689932800"
+          ],
+          "id": "1580176271689932800",
+          "text": "I have spent the last 22+ years writing code and if you want to be the best programmer in the world here are the 57 things you need to focus on \n\n🧵 1/58"
+        },
+        {
+          "edit_history_tweet_ids": [
+            "1558790898485526530"
+          ],
+          "id": "1558790898485526530",
+          "text": "Devs who say Java is verbose have probably never built a Spring Boot application.\n\nSpring Boot is one of the least verbose ways to build a fully-functional web app or service."
+        }
+      ],
+      "meta": {
+        "result_count": 5,
+        "next_token": "7140dibdnow9c7btw481s038g5qpxffhnuq6znxvuc5dc"
+      }
+    }
+  }
+}

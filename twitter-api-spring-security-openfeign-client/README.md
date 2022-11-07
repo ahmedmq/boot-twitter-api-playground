@@ -15,7 +15,7 @@ Spring Security and Spring Cloud Openfeign
 
 The consumer key and consumer secret can be fetched from the Twitter Developer Portal. Details mentioned [here](https://developer.twitter.com/en/docs/authentication/oauth-1-0a/api-key-and-secret)
 
-- Start the application from the console by entering the command from the root of the project
+- Start the application from the console by entering the command from the root of the module
 
     ```
     ./mvnw spring-boot:run
@@ -28,3 +28,13 @@ Data[id=1581902874811854848, text=Why is this so true https://t.co/4LoVSfOpdr ht
 Data[id=1581654488598736896, text=@elonmusk “Two things are infinite: The universe and human stupidity.” 
 ...
 ```
+
+## Testing
+
+- Run the tests from the console by entering the command from the root of the module
+
+    ```
+    ./mvnw test
+    ```
+
+The test starts a Wiremock server that returns stubbed responses defined in the `src/test/resources/mappings` folder. We configure a Wiremock instance manually using Spring's `ApplicationContextInitializer`. The JSON stub responses are provided in the `/src/test/resources/__files` folder
