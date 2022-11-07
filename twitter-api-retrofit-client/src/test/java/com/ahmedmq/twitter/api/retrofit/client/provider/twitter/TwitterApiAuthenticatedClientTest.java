@@ -8,11 +8,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.wiremock.AutoConfigureWireMock;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @AutoConfigureWireMock(port = 0)
+@ActiveProfiles("test")
 @TestPropertySource(
 		properties = {
 				"twitter.api.url=http://localhost:${wiremock.server.port}"
